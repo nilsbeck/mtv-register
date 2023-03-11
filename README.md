@@ -20,4 +20,4 @@ This tiny tool lets you automatically register for courses at MTV Braunschweig.
  ```
  ./main 297 1
  ```
- The above will inscribe you to Turnzwerge II on a Thursday for 15:30.
+ The above will inscribe you to Turnzwerge II on a Thursday (`297`) for 15:30 (`1`).
