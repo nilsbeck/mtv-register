@@ -21,3 +21,7 @@ This tiny tool lets you automatically register for courses at MTV Braunschweig.
  ./main 297 1
  ```
  The above will inscribe you to Turnzwerge II on a Thursday (`297`) for 15:30 (`1`).
+
+# Troubleshooting
+
+If you encounter problems, there is sample code in the main.go file that you can use to create screenshots of the browser's viewport.
