@@ -40,7 +40,6 @@ func main() {
 	defer cancel()
 
 	// navigate to main page of the course
-	//var buf []byte
 	err := chromedp.Run(ctx,
 		chromedp.Navigate(url),
 	)
@@ -92,14 +91,14 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// err = chromedp.Run(ctx,
-	// 	chromedp.FullScreenshot(&buf, 90),
-	// )
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-	// if err := os.WriteFile("fullScreenshot.png", buf, 0o644); err != nil {
-	// 	log.Fatal(err)
-	// }
-
+	var buf []byte
+	err = chromedp.Run(ctx,
+		chromedp.FullScreenshot(&buf, 90),
+	)
+	if err != nil {
+		log.Fatal(err)
+	}
+	if err := os.WriteFile("fullScreenshot.png", buf, 0o644); err != nil {
+		log.Fatal(err)
+	}
 }
