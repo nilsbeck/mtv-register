@@ -15,7 +15,7 @@ This tiny tool lets you automatically register for courses at MTV Braunschweig.
   go build main.go
   ```
  
-* run binary with the course number, you extract it from the course url and a time selector. Counting starts with 1 from the drop down
+* run binary with the course number, you extract it from the course url and a time selector. Counting starts with 1 from the drop down. If no time needs to be selected because the course is only offered once on a day, pass `-1`.
 
  ```
  ./main 297 1
