@@ -21,6 +21,20 @@ This tiny tool lets you automatically register for courses at MTV Braunschweig.
  ./main 297 1
  ```
  The above will inscribe you to Turnzwerge II on a Thursday (`297`) for 15:30 (`1`).
+ 
+ ## Crontab
+ 
+ To run as a cron job, add the PATH variable to your crontab:
+ 
+```
+ PATH=<paths from `.bashrc`>
+```
+
+and run the binary as the following example shows:
+
+```
+30 16 * * 4 /bin/bash -l -c '<ABS_PATH_TO_BINARY>/main 297 2 >> <ABS_PATH_TO_LOGS>/logging 2>&1'
+```
 
 # Troubleshooting
 
